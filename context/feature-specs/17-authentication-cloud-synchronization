@@ -1,0 +1,624 @@
+# Feature 17 - Authentication & Cloud Synchronization
+
+## Objective
+
+Implement a secure Authentication and Cloud Synchronization module that enables users to create accounts, securely log in, synchronize their health data across devices, and protect sensitive medical information.
+
+This feature establishes secure user identity management and cloud storage for prediction history, user profiles, and application preferences.
+
+---
+
+# Goals
+
+- User Registration
+- Secure Login
+- JWT Authentication
+- Refresh Tokens
+- Email Verification (Future)
+- Password Reset
+- Cloud Synchronization
+- Multi-device Support
+- Secure Logout
+- Session Management
+
+---
+
+# Pipeline Position
+
+```
+Launch App
+
+↓
+
+Authentication
+
+↓
+
+User Profile
+
+↓
+
+AI Screening
+
+↓
+
+Prediction
+
+↓
+
+Cloud Sync
+
+↓
+
+History
+
+↓
+
+Doctor Consultation
+```
+
+---
+
+# Functional Requirements
+
+The system shall
+
+- Register new users.
+- Authenticate existing users.
+- Maintain secure sessions.
+- Synchronize user data.
+- Synchronize prediction history.
+- Synchronize profile information.
+- Support automatic login.
+- Support logout.
+
+---
+
+# Folder Structure
+
+```
+backend/
+
+app/
+
+routers/
+
+auth.py
+
+schemas/
+
+auth.py
+
+services/
+
+auth/
+
+auth_service.py
+
+jwt_service.py
+
+password_service.py
+
+sync_service.py
+
+repositories/
+
+user_repository.py
+
+session_repository.py
+
+models/
+
+user.py
+
+session.py
+
+mobile/
+
+screens/
+
+Authentication/
+
+LoginScreen.tsx
+
+RegisterScreen.tsx
+
+ForgotPasswordScreen.tsx
+
+SplashScreen.tsx
+
+components/
+
+authentication/
+
+LoginForm.tsx
+
+RegisterForm.tsx
+
+PasswordInput.tsx
+
+AuthHeader.tsx
+
+SocialLoginButton.tsx
+
+store/
+
+authSlice.ts
+```
+
+---
+
+# Authentication Flow
+
+```
+App Launch
+
+↓
+
+Splash Screen
+
+↓
+
+Token Exists?
+
+↓
+
+YES
+
+↓
+
+Validate Token
+
+↓
+
+Home
+
+────────────────────
+
+NO
+
+↓
+
+Login
+
+↓
+
+Register
+
+↓
+
+Home
+```
+
+---
+
+# User Registration
+
+Fields
+
+```
+Full Name
+
+Email
+
+Password
+
+Confirm Password
+```
+
+Validation
+
+- Valid email
+- Password ≥ 8 characters
+- Password confirmation
+- Duplicate email detection
+
+---
+
+# Login
+
+Fields
+
+```
+Email
+
+Password
+```
+
+Authentication
+
+```
+Email
+
+↓
+
+Password Verification
+
+↓
+
+JWT Generation
+
+↓
+
+Login Success
+```
+
+---
+
+# JWT Tokens
+
+Generate
+
+```
+Access Token
+
+Refresh Token
+```
+
+Access Token
+
+- Short expiry (15–30 minutes)
+
+Refresh Token
+
+- Long expiry (7–30 days)
+
+---
+
+# Password Security
+
+Hash passwords using
+
+```
+bcrypt
+```
+
+Never store plain-text passwords.
+
+---
+
+# Cloud Synchronization
+
+Synchronize
+
+- User Profile
+- Health Profile
+- Prediction History
+- Preferences
+- Settings
+
+Synchronization triggers
+
+- Login
+- New Prediction
+- Profile Update
+- App Launch
+
+---
+
+# Backend API
+
+## Register
+
+```
+POST
+
+/api/v1/auth/register
+```
+
+---
+
+## Login
+
+```
+POST
+
+/api/v1/auth/login
+```
+
+---
+
+## Refresh Token
+
+```
+POST
+
+/api/v1/auth/refresh
+```
+
+---
+
+## Logout
+
+```
+POST
+
+/api/v1/auth/logout
+```
+
+---
+
+## Current User
+
+```
+GET
+
+/api/v1/auth/me
+```
+
+---
+
+# Example Login Response
+
+```json
+{
+  "success": true,
+  "accessToken": "jwt_access_token",
+  "refreshToken": "jwt_refresh_token",
+  "user": {
+    "id": "123",
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}
+```
+
+---
+
+# Frontend Screens
+
+## SplashScreen
+
+Responsibilities
+
+- Check stored token
+- Validate session
+- Navigate accordingly
+
+---
+
+## LoginScreen
+
+Display
+
+- Email
+- Password
+- Login Button
+- Forgot Password
+- Register Link
+
+---
+
+## RegisterScreen
+
+Display
+
+- Registration Form
+- Validation Errors
+- Register Button
+
+---
+
+## ForgotPasswordScreen
+
+Display
+
+- Email Input
+- Reset Button
+
+Future backend implementation.
+
+---
+
+# Components
+
+## LoginForm
+
+Reusable login form.
+
+---
+
+## RegisterForm
+
+Reusable registration form.
+
+---
+
+## PasswordInput
+
+Reusable password field with show/hide toggle.
+
+---
+
+## AuthHeader
+
+Display
+
+- App Logo
+- Welcome Message
+
+---
+
+## SocialLoginButton
+
+Placeholder
+
+Future
+
+- Google Login
+- Apple Login
+
+---
+
+# State Management
+
+Redux Slice
+
+```
+authentication
+
+↓
+
+loading
+
+user
+
+accessToken
+
+refreshToken
+
+isAuthenticated
+
+error
+```
+
+---
+
+# Local Storage
+
+Store securely
+
+```
+Access Token
+
+Refresh Token
+
+User ID
+```
+
+Use
+
+```
+expo-secure-store
+```
+
+Do not store tokens in AsyncStorage.
+
+---
+
+# Error Handling
+
+Handle
+
+- Invalid credentials.
+- Duplicate email.
+- Expired token.
+- Invalid token.
+- Network timeout.
+- Server unavailable.
+
+Display user-friendly messages.
+
+---
+
+# Accessibility
+
+- Large form fields.
+- Proper keyboard navigation.
+- Screen reader labels.
+- Password visibility toggle.
+
+---
+
+# Performance
+
+- Restore session on app launch.
+- Refresh tokens automatically.
+- Cache authenticated user profile.
+
+---
+
+# Acceptance Criteria
+
+The feature is complete when
+
+- Registration works.
+- Login works.
+- JWT authentication works.
+- Passwords are securely hashed.
+- Tokens are securely stored.
+- Automatic login works.
+- Logout works.
+- Cloud synchronization works.
+- User session persists across app restarts.
+
+---
+
+# Testing Checklist
+
+- Register new user.
+- Login with valid credentials.
+- Login with invalid credentials.
+- Logout.
+- Restart app.
+- Verify session persistence.
+- Verify token refresh.
+- Verify secure storage.
+- Verify API responses.
+
+---
+
+# Deliverables
+
+- Authentication API
+- JWT Service
+- Password Service
+- Sync Service
+- LoginScreen
+- RegisterScreen
+- ForgotPasswordScreen
+- Authentication Redux Slice
+- Secure Token Storage
+
+---
+
+# Out of Scope
+
+This feature does NOT include
+
+- Google Login
+- Apple Login
+- Two-Factor Authentication
+- Biometric Login
+- OAuth Providers
+
+---
+
+# Security Considerations
+
+- Hash passwords using bcrypt.
+- Use HTTPS for all API communication.
+- Never expose JWT secrets.
+- Validate all incoming tokens.
+- Protect authenticated endpoints.
+- Implement token expiration and refresh.
+
+---
+
+# Future Enhancements
+
+- Google Sign-In
+- Apple Sign-In
+- Biometric Authentication
+- Two-Factor Authentication
+- Email Verification
+- Account Recovery
+- Device Management
+- Session History
+
+---
+
+# Next Feature
+
+## Feature 18 - Database & Cloud Infrastructure
+
+Implement
+
+- PostgreSQL integration
+- SQLAlchemy ORM
+- Alembic migrations
+- User database
+- Prediction history database
+- Profile database
+- Cloud file storage
+- Production-ready backend infrastructure

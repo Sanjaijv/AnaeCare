@@ -1,0 +1,58 @@
+components/feature/ExtractionAnimation.tsx(59,39): error TS2339: Property 'medium' does not exist on type 'string'.
+components/feature/ExtractionAnimation.tsx(64,17): error TS2322: Type '() => string' is not assignable to type 'string'.
+components/feature/ExtractionAnimation.tsx(69,17): error TS2322: Type '() => string' is not assignable to type 'string'.
+components/feature/FeatureSummary.tsx(21,13): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+components/feature/FeatureSummary.tsx(37,11): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ fontSize: number; color: string; fontFamily: () => string; marginTop: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; color: string; fontFamily: () => string; marginTop: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ fontSize: number; color: string; fontFamily: () => string; marginTop: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; color: string; fontFamily: () => string; marginTop: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+components/feature/FeatureSummary.tsx(41,34): error TS2345: Argument of type '{ container: { padding: number; backgroundColor: string; borderRadius: any; shadowColor: string; shadowOffset: { width: number; height: number; }; shadowOpacity: number; shadowRadius: number; elevation: number; marginVertical: number; }; ... 4 more ...; value: { ...; }; }' is not assignable to parameter of type '{ container: { padding: number; backgroundColor: string; borderRadius: any; shadowColor: string; shadowOffset: { width: number; height: number; }; shadowOpacity: number; shadowRadius: number; elevation: number; marginVertical: number; }; ... 4 more ...; value: { ...; }; } & NamedStyles<...>'.
+  Property 'title' is incompatible with index signature.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'ViewStyle | TextStyle | ImageStyle'.
+      Types of property 'fontFamily' are incompatible.
+        Type '() => string' is not assignable to type 'string'.
+components/feature/FeatureSummary.tsx(45,19): error TS2304: Cannot find name 'theme'.
+components/feature/FeatureSummary.tsx(69,19): error TS2304: Cannot find name 'theme'.
+components/feature/FeatureSummary.tsx(73,19): error TS2339: Property 'textLight' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+components/feature/FeatureSummary.tsx(74,39): error TS2339: Property 'regular' does not exist on type 'string'.
+screens/FeatureReview/FeatureReviewScreen.tsx(25,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'StyleProp<TextStyle>'.
+      Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'TextStyle'.
+        Types of property 'fontFamily' are incompatible.
+          Type '() => string' is not assignable to type 'string'.
+screens/FeatureReview/FeatureReviewScreen.tsx(33,11): error TS2322: Type '{ title: string; onPress: () => void; style: { marginTop: number; }; }' is not assignable to type 'IntrinsicAttributes & AppButtonProps'.
+  Property 'title' does not exist on type 'IntrinsicAttributes & AppButtonProps'.
+screens/FeatureReview/FeatureReviewScreen.tsx(42,34): error TS2345: Argument of type '{ container: { flex: number; backgroundColor: string; }; content: { padding: number; }; card: { backgroundColor: string; padding: number; borderRadius: any; marginBottom: number; shadowColor: string; ... 4 more ...; alignItems: "center"; }; title: { ...; }; subtitle: { ...; }; button: { ...; }; }' is not assignable to parameter of type '{ container: { flex: number; backgroundColor: string; }; content: { padding: number; }; card: { backgroundColor: string; padding: number; borderRadius: any; marginBottom: number; shadowColor: string; ... 4 more ...; alignItems: "center"; }; title: { ...; }; subtitle: { ...; }; button: { ...; }; } & NamedStyles<...>'.
+  Property 'title' is incompatible with index signature.
+    Type '{ fontSize: number; fontFamily: () => string; color: string; marginBottom: number; }' is not assignable to type 'ViewStyle | TextStyle | ImageStyle'.
+      Types of property 'fontFamily' are incompatible.
+        Type '() => string' is not assignable to type 'string'.
+screens/FeatureReview/FeatureReviewScreen.tsx(53,19): error TS2304: Cannot find name 'theme'.
+screens/FeatureReview/FeatureReviewScreen.tsx(70,39): error TS2339: Property 'medium' does not exist on type 'string'.
+screens/Prediction/PredictionProcessingScreen.tsx(11,20): error TS2307: Cannot find module '../../components/ui/Button' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(83,13): error TS2322: Type '"h2"' is not assignable to type 'VariantProp<never> | undefined'.
+screens/Prediction/PredictionProcessingScreen.tsx(102,17): error TS2322: Type '"h3"' is not assignable to type 'VariantProp<never> | undefined'.
+screens/Prediction/PredictionProcessingScreen.tsx(105,17): error TS2322: Type '"h3"' is not assignable to type 'VariantProp<never> | undefined'.

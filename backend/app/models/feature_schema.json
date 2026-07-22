@@ -1,0 +1,22 @@
+{
+    "version": "1.0",
+    "features": [
+        "redness_index",
+        "paleness_index",
+        "erythema_index",
+        "rgb_r_mean",
+        "rgb_g_mean",
+        "rgb_b_mean",
+        "hsv_h_mean",
+        "hsv_s_mean",
+        "hsv_v_mean",
+        "lab_l_mean",
+        "lab_a_mean",
+        "lab_b_mean",
+        "contrast",
+        "energy",
+        "homogeneity",
+        "correlation"
+    ],
+    "featureCount": 16
+}

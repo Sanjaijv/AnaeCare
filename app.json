@@ -6,6 +6,21 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow AnaeCare to access your camera to capture eye images."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow AnaeCare to access your photos to upload eye images."
+        }
+      ],
+      "expo-secure-store"
+    ],
     "ios": {
       "supportsTablet": true
     },

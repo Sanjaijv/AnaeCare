@@ -1,0 +1,20 @@
+components/diet/EducationCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/EducationCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/EducationCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+components/diet/FoodCategoryCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/FoodCategoryCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/FoodCategoryCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+components/diet/FoodItemCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/FoodItemCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/FoodItemCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+components/diet/HydrationCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/HydrationCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/HydrationCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+components/diet/LifestyleCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/LifestyleCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/LifestyleCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+components/diet/RiskSummaryCard.tsx(3,24): error TS2307: Cannot find module '../../../theme/colors' or its corresponding type declarations.
+components/diet/RiskSummaryCard.tsx(4,25): error TS2307: Cannot find module '../../../theme/spacing' or its corresponding type declarations.
+components/diet/RiskSummaryCard.tsx(5,28): error TS2307: Cannot find module '../../../theme/typography' or its corresponding type declarations.
+screens/Diet/DietScreen.tsx(155,19): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+screens/Diet/DietScreen.tsx(163,25): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.

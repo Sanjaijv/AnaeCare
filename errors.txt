@@ -1,0 +1,15 @@
+components/camera/CameraOverlay.tsx(25,19): error TS2551: Property 'absoluteFillObject' does not exist on type 'typeof StyleSheet'. Did you mean 'absoluteFill'?
+components/dashboard/FloatingScanButton.tsx(3,26): error TS2307: Cannot find module '@expo/vector-icons' or its corresponding type declarations.
+components/dashboard/HealthTipCard.tsx(3,26): error TS2307: Cannot find module '@expo/vector-icons' or its corresponding type declarations.
+components/dashboard/QuickActionCard.tsx(3,26): error TS2307: Cannot find module '@expo/vector-icons' or its corresponding type declarations.
+navigation/MainNavigator.tsx(5,10): error TS2614: Module '"../screens/Camera/CameraScreen"' has no exported member 'CameraScreen'. Did you mean to use 'import CameraScreen from "../screens/Camera/CameraScreen"' instead?
+screens/Home/HomeScreen.tsx(46,32): error TS2769: No overload matches this call.
+  Argument of type '[keyof MainStackParamList]' is not assignable to parameter of type '[screen: "Camera", params?: undefined, options?: { merge?: boolean | undefined; pop?: boolean | undefined; } | undefined] | [screen: "MainTabs", params?: undefined, options?: { merge?: boolean | undefined; pop?: boolean | undefined; } | undefined] | [screen: ...] | [screen: ...] | [screen: ...]'.
+    Type '[keyof MainStackParamList]' is not assignable to type '[screen: "Camera", params?: undefined, options?: { merge?: boolean | undefined; pop?: boolean | undefined; } | undefined] | [screen: "MainTabs", params?: undefined, options?: { merge?: boolean | undefined; pop?: boolean | undefined; } | undefined] | [screen: ...] | [screen: ...]'.
+      Type '[keyof MainStackParamList]' is not assignable to type '[screen: "Prediction", params?: undefined, options?: { merge?: boolean | undefined; pop?: boolean | undefined; } | undefined]'.
+        Type at position 0 in source is not compatible with type at position 0 in target.
+          Type 'keyof MainStackParamList' is not assignable to type '"Prediction"'.
+            Type '"Camera"' is not assignable to type '"Prediction"'.
+  Overload 2 of 2, '(options: { name: "Camera"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { name: "MainTabs"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { ...; } | { ...; } | { ...; }): void', gave the following error.
+    Argument of type 'string' is not assignable to parameter of type '{ name: "Camera"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { name: "MainTabs"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { ...; } | { ...; } | { ...; }'.
+      Type 'string' is not assignable to type '{ name: "Camera"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { name: "MainTabs"; params: undefined; path?: string | undefined; merge?: boolean | undefined; pop?: boolean | undefined; } | { ...; } | { ...; } | { ...; }'.

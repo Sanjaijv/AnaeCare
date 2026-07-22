@@ -1,0 +1,36 @@
+components/conjunctiva/ROIViewer.tsx(11,112): error TS2339: Property 'uri' does not exist on type 'ImageState'.
+components/feature/ExtractionAnimation.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/feature/FeatureProgress.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/feature/FeatureSummary.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/prediction/ConfidenceCard.tsx(3,22): error TS2307: Cannot find module '../ui/Text' or its corresponding type declarations.
+components/prediction/PredictionAnimation.tsx(3,22): error TS2307: Cannot find module '../ui/Text' or its corresponding type declarations.
+components/prediction/ProbabilityChart.tsx(3,22): error TS2307: Cannot find module '../ui/Text' or its corresponding type declarations.
+components/prediction/ProbabilityChart.tsx(17,66): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+components/prediction/RiskIndicator.tsx(3,22): error TS2307: Cannot find module '../ui/Text' or its corresponding type declarations.
+components/prediction/RiskIndicator.tsx(14,46): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+components/quality/QualityScoreCircle.tsx(4,26): error TS2307: Cannot find module '../../theme/ThemeProvider' or its corresponding type declarations.
+screens/ConjunctivaDetection/ConjunctivaDetectionScreen.tsx(21,112): error TS2339: Property 'uri' does not exist on type 'ImageState'.
+screens/FeatureExtraction/FeatureExtractionScreen.tsx(10,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/FeatureExtraction/FeatureExtractionScreen.tsx(12,25): error TS2307: Cannot find module '../../config/api' or its corresponding type declarations.
+screens/FeatureReview/FeatureReviewScreen.tsx(8,24): error TS2307: Cannot find module '../../components/common/Button' or its corresponding type declarations.
+screens/FeatureReview/FeatureReviewScreen.tsx(9,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/ImageQuality/ImageQualityScreen.tsx(18,25): error TS2307: Cannot find module '../../config/env' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(6,48): error TS2307: Cannot find module '../../hooks/redux' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(10,22): error TS2307: Cannot find module '../../components/ui/Text' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(11,20): error TS2307: Cannot find module '../../components/ui/Button' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(23,99): error TS7006: Parameter 'state' implicitly has an 'any' type.
+screens/Prediction/PredictionProcessingScreen.tsx(24,44): error TS7006: Parameter 'state' implicitly has an 'any' type.
+screens/Prediction/PredictionProcessingScreen.tsx(106,29): error TS7006: Parameter 'item' implicitly has an 'any' type.
+screens/Prediction/PredictionProcessingScreen.tsx(106,35): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+screens/Prediction/PredictionProcessingScreen.tsx(109,69): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+screens/Prediction/PredictionProcessingScreen.tsx(156,19): error TS2339: Property 'error' does not exist on type '{ primary: string; success: string; warning: string; danger: string; background: string; surface: string; text: string; textSecondary: string; muted: string; border: string; overlay: string; }'.
+screens/PredictionResult/PredictionResultScreen.tsx(55,41): error TS2322: Type '{ title: string; showBackButton: true; onBackPress: () => void; }' is not assignable to type 'IntrinsicAttributes & HeaderProps'.
+  Property 'showBackButton' does not exist on type 'IntrinsicAttributes & HeaderProps'.
+screens/Preprocessing/PreprocessingScreen.tsx(30,11): error TS2339: Property 'uri' does not exist on type 'ImageState'.
+screens/Preprocessing/PreprocessingScreen.tsx(46,34): error TS2694: Namespace 'global.NodeJS' has no exported member 'Timeout'.
+store/slices/conjunctivaSlice.ts(6,6): error TS2304: Cannot find name 'int'.
+store/slices/conjunctivaSlice.ts(7,6): error TS2304: Cannot find name 'int'.
+store/slices/conjunctivaSlice.ts(8,10): error TS2304: Cannot find name 'int'.
+store/slices/conjunctivaSlice.ts(9,11): error TS2304: Cannot find name 'int'.
+store/slices/conjunctivaSlice.ts(13,6): error TS2304: Cannot find name 'int'.
+store/slices/conjunctivaSlice.ts(14,6): error TS2304: Cannot find name 'int'.

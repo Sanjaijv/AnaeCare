@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: anaecare_db_prod
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-anaecare}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-anaecare_password}
+      POSTGRES_DB: ${POSTGRES_DB:-anaecare_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-anaecare} -d ${POSTGRES_DB:-anaecare_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile.prod
+    container_name: anaecare_backend_prod
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-anaecare}:${POSTGRES_PASSWORD:-anaecare_password}@db:5432/${POSTGRES_DB:-anaecare_db}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-your-super-secret-key}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: anaecare_prometheus
+    volumes:
+      - ./backend/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+
+volumes:
+  postgres_data_prod:

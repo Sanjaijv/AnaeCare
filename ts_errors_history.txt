@@ -1,0 +1,20 @@
+components/history/EmptyHistory.tsx(3,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/FilterBar.tsx(3,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/HistoryCard.tsx(4,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/HistoryCard.tsx(5,22): error TS2307: Cannot find module '../layout/Card' or its corresponding type declarations.
+components/history/SearchBar.tsx(3,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/StatisticsCard.tsx(4,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/StatisticsCard.tsx(5,22): error TS2307: Cannot find module '../layout/Card' or its corresponding type declarations.
+components/history/TimelineCard.tsx(4,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/TimelineCard.tsx(5,22): error TS2307: Cannot find module '../layout/Card' or its corresponding type declarations.
+components/history/TrendChart.tsx(6,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/history/TrendChart.tsx(7,22): error TS2307: Cannot find module '../layout/Card' or its corresponding type declarations.
+screens/History/HistoryScreen.tsx(10,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/History/HistoryScreen.tsx(11,40): error TS2307: Cannot find module '../../store' or its corresponding type declarations.
+screens/History/PredictionDetailsScreen.tsx(6,27): error TS2307: Cannot find module '../../store' or its corresponding type declarations.
+screens/History/PredictionDetailsScreen.tsx(9,22): error TS2307: Cannot find module '../../components/layout/Card' or its corresponding type declarations.
+screens/History/PredictionDetailsScreen.tsx(10,45): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/History/PredictionDetailsScreen.tsx(21,47): error TS2322: Type '{ title: string; showBack: true; onBack: () => void; }' is not assignable to type 'IntrinsicAttributes & AppHeaderProps'.
+  Property 'showBack' does not exist on type 'IntrinsicAttributes & AppHeaderProps'.
+screens/History/PredictionDetailsScreen.tsx(50,45): error TS2322: Type '{ title: string; showBack: true; onBack: () => void; }' is not assignable to type 'IntrinsicAttributes & AppHeaderProps'.
+  Property 'showBack' does not exist on type 'IntrinsicAttributes & AppHeaderProps'.

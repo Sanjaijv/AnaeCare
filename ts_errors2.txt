@@ -1,0 +1,30 @@
+components/feature/ExtractionAnimation.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/feature/FeatureProgress.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+components/feature/FeatureSummary.tsx(3,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/FeatureExtraction/FeatureExtractionScreen.tsx(10,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/FeatureReview/FeatureReviewScreen.tsx(9,23): error TS2307: Cannot find module '../../theme' or its corresponding type declarations.
+screens/FeatureReview/FeatureReviewScreen.tsx(31,11): error TS2322: Type '{ title: string; onPress: () => void; style: { marginTop: any; }; }' is not assignable to type 'IntrinsicAttributes & AppButtonProps'.
+  Property 'title' does not exist on type 'IntrinsicAttributes & AppButtonProps'.
+screens/Prediction/PredictionProcessingScreen.tsx(11,20): error TS2307: Cannot find module '../../components/ui/Button' or its corresponding type declarations.
+screens/Prediction/PredictionProcessingScreen.tsx(83,13): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { textAlign: "center"; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { textAlign: "center"; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+screens/Prediction/PredictionProcessingScreen.tsx(102,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { marginTop: number; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { marginTop: number; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+screens/Prediction/PredictionProcessingScreen.tsx(105,17): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: TextProps): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { marginTop: number; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+  Overload 2 of 2, '(props: TextProps, context: any): Text', gave the following error.
+    Type '{ children: string; variant: string; style: { marginTop: number; marginBottom: number; color: string; }; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+      Property 'variant' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Text> & Readonly<TextProps>'.
+screens/Preprocessing/PreprocessingScreen.tsx(30,11): error TS2339: Property 'uri' does not exist on type 'ImageState'.
